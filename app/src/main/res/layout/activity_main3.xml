@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:text="Email : "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:text="Credit : "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_name"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toEndOf="@id/textView2"
+        android:layout_toRightOf="@id/textView2"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_email"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_toRightOf="@id/textView3"
+        android:text=""
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:onClick="transfer"
+        android:text="Transfer Credit"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
